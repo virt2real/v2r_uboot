@@ -1,0 +1,1622 @@
+Archive member included because of file (symbol)
+
+board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+                              arch/arm/lib/libarm.o (board_init)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivsi3.o)
+                              arch/arm/cpu/arm926ejs/davinci/libdavinci.o (__aeabi_uidiv)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divsi3.o)
+                              common/libcommon.o (__aeabi_idiv)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_dvmd_tls.o)
+                              /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_lshrdi3.o)
+                              drivers/mtd/nand/libnand.o (__aeabi_llsr)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashrdi3.o)
+                              drivers/mtd/nand/libnand.o (__aeabi_lasr)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashldi3.o)
+                              drivers/mmc/libmmc.o (__aeabi_llsl)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_aeabi_uldivmod.o)
+                              arch/arm/cpu/arm926ejs/davinci/libdavinci.o (__aeabi_uldivmod)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o)
+                              /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_aeabi_uldivmod.o) (__gnu_uldivmod_helper)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+                              /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o) (__divdi3)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+                              /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o) (__udivdi3)
+/opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_clzsi2.o)
+                              /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o) (__clzsi2)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                . = 0x0
+                0x00000000                . = ALIGN (0x4)
+
+.text           0x82000000    0x36560
+ arch/arm/cpu/arm926ejs/start.o(.text)
+ .text          0x82000000      0x420 arch/arm/cpu/arm926ejs/start.o
+                0x82000000                _start
+                0x82000040                _TEXT_BASE
+                0x82000044                _bss_start_ofs
+                0x82000048                _bss_end_ofs
+                0x8200004c                IRQ_STACK_START_IN
+                0x82000070                relocate_code
+ *(.text)
+ .text          0x82000420      0x7d8 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+                0x820004d0                print_cpuinfo
+                0x82000548                cpu_eth_init
+                0x82000558                timer_init
+                0x820005a8                get_ticks
+                0x820005e8                reset_timer
+                0x820005fc                get_timer
+                0x82000640                __udelay
+                0x8200068c                get_tbclk
+                0x82000694                lpsc_on
+                0x8200070c                davinci_enable_uart0
+                0x82000714                davinci_enable_i2c
+                0x8200071c                lxt972_is_phy_connected
+                0x82000788                lxt972_get_link_speed
+                0x82000828                lxt972_init_phy
+                0x82000868                lxt972_auto_negotiate
+                0x820008e8                dp83848_is_phy_connected
+                0x82000950                dp83848_get_link_speed
+                0x820009c0                dp83848_init_phy
+                0x82000a0c                dp83848_auto_negotiate
+                0x82000af8                et1011c_get_link_speed
+                0x82000b4c                reset_cpu
+ .text          0x82000bf8       0x20 arch/arm/cpu/arm926ejs/libarm926ejs.o
+                0x82000bf8                cleanup_before_linux
+ .text          0x82000c18      0x8a4 arch/arm/lib/libarm.o
+                0x82000cc0                coloured_LED_init
+                0x82000cc0                __coloured_LED_init
+                0x82000cc4                red_LED_on
+                0x82000cc4                __red_LED_on
+                0x82000cc8                __red_LED_off
+                0x82000cc8                red_LED_off
+                0x82000ccc                green_LED_on
+                0x82000ccc                __green_LED_on
+                0x82000cd0                __green_LED_off
+                0x82000cd0                green_LED_off
+                0x82000cd4                __yellow_LED_on
+                0x82000cd4                yellow_LED_on
+                0x82000cd8                __yellow_LED_off
+                0x82000cd8                yellow_LED_off
+                0x82000cdc                blue_LED_on
+                0x82000cdc                __blue_LED_on
+                0x82000ce0                blue_LED_off
+                0x82000ce0                __blue_LED_off
+                0x82000ce4                __dram_init_banksize
+                0x82000d00                board_init_r
+                0x82000e04                hang
+                0x82000e18                board_init_f
+                0x82000f20                arch_lmb_reserve
+                0x82000f44                do_bootm_linux
+                0x820010ac                flush_cache
+                0x82001178                icache_enable
+                0x82001190                icache_disable
+                0x820011a8                icache_status
+                0x820011b8                dcache_enable
+                0x820011d4                dcache_disable
+                0x82001200                dcache_status
+                0x82001210                interrupt_init
+                0x8200122c                enable_interrupts
+                0x82001230                disable_interrupts
+                0x82001238                bad_mode
+                0x82001254                show_regs
+                0x82001390                do_undefined_instruction
+                0x820013b4                do_software_interrupt
+                0x820013d8                do_prefetch_abort
+                0x820013fc                do_data_abort
+                0x82001420                do_not_used
+                0x82001444                do_fiq
+                0x82001468                do_irq
+                0x8200148c                do_reset
+ .text          0x820014bc      0x21c board/davinci/common/libdavinci.o
+                0x820014bc                dram_init
+                0x820014dc                dram_init_banksize
+                0x820014f8                dvevm_read_mac_address
+                0x82001500                davinci_sync_env_enetaddr
+                0x82001544                davinci_configure_pin_mux
+                0x820015c4                davinci_configure_pin_mux_items
+                0x8200160c                pinmux_info
+ .text          0x820016d8    0x146f4 common/libcommon.o
+                0x820016f0                do_bdinfo
+                0x8200180c                do_go_exec
+                0x82001824                do_go
+                0x82001984                do_bootd
+                0x820019a8                do_iminfo
+                0x82002064                arch_preboot_os
+                0x82002064                __arch_preboot_os
+                0x82002068                do_bootm_subcommand
+                0x820022ac                do_bootm
+                0x82002588                do_dcache
+                0x82002600                do_icache
+                0x82002678                do_coninfo
+                0x82002730                do_echo
+                0x820027b8                do_exit
+                0x820027ec                do_ext2load
+                0x82002af8                do_ext2ls
+                0x82002c24                do_fat_fsinfo
+                0x82002cfc                do_fat_ls
+                0x82002e04                do_fat_fsload
+                0x82003128                do_help
+                0x82003a30                __def_i2c_get_bus_speed
+                0x82003a30                i2c_get_bus_speed
+                0x82003a3c                __def_i2c_set_bus_speed
+                0x82003a3c                i2c_set_bus_speed
+                0x82003b40                binary_test
+                0x82003d2c                do_itest
+                0x82003dc4                do_lcd_sleep
+                0x82003ddc                do_lcd_awake
+                0x82003df4                do_lcd_init
+                0x82003e0c                do_lcd_reg_set
+                0x82003e24                do_lcd_reg_get
+                0x82003fa4                do_save_serial
+                0x82004378                do_load_serial
+                0x82004458                send_pad
+                0x82004488                ktrans
+                0x820044ac                chk1
+                0x820044d8                s1_sendpacket
+                0x82004500                send_ack
+                0x8200455c                send_nack
+                0x820045b8                k_data_init
+                0x820045d8                k_data_save
+                0x820045fc                k_data_restore
+                0x82004620                k_data_char
+                0x82004670                handle_send_packet
+                0x82004850                do_load_serial_bin
+                0x82004cc8                do_mem_crc
+                0x82004e00                do_mem_base
+                0x82004e40                do_mem_mtest
+                0x82004fe0                do_mem_loop
+                0x820050d4                do_mem_md
+                0x820051b0                do_mem_cp
+                0x82005284                do_mem_cmp
+                0x82005424                do_mem_mw
+                0x820054e0                do_mem_mwc
+                0x820056b0                do_mem_nm
+                0x820056c8                do_mem_mdc
+                0x82005744                do_mem_mm
+                0x8200575c                do_sleep
+                0x820057dc                do_mmcinfo
+                0x82005924                do_mmcops
+                0x8200668c                mtd_device_validate
+                0x820066c0                device_find
+                0x82006be0                mtd_id_parse
+                0x82006cf0                find_dev_and_part
+                0x82006eac                mtdparts_init
+                0x820074bc                do_mtdparts
+                0x82007a4c                do_chpart
+                0x82007df0                do_nandboot
+                0x82008258                do_nand
+                0x82008f38                do_nfs
+                0x82008f44                do_dhcp
+                0x82008f50                do_tftpb
+                0x82008f5c                do_bootp
+                0x82008f68                do_ping
+                0x820092fc                do_env_save
+                0x820093a8                do_env_print
+                0x8200942c                get_env_id
+                0x8200943c                _do_env_set
+                0x8200980c                do_env_ask
+                0x82009964                do_env_set
+                0x82009980                setenv
+                0x82009bd8                envmatch
+                0x82009c40                getenv_f
+                0x82009d0c                getenv
+                0x82009d58                do_env_edit
+                0x82009dc0                do_pin_mux
+                0x82009e00                source
+                0x82009f48                do_source
+                0x82009f94                do_spi
+                0x8200a1c4                do_false
+                0x8200a1cc                do_true
+                0x8200a1d4                do_test
+                0x8200b500                do_usbboot
+                0x8200b8a0                usb_get_class_desc
+                0x8200b964                usb_display_class_sub
+                0x8200baec                usb_display_string
+                0x8200bb28                usb_display_desc
+                0x8200bc58                usb_display_conf_desc
+                0x8200bd04                usb_display_if_desc
+                0x8200bd8c                usb_display_ep_desc
+                0x8200be50                usb_display_config
+                0x8200bed4                usb_show_tree_graph
+                0x8200c100                usb_show_tree
+                0x8200c130                do_usb
+                0x8200c670                do_version
+                0x8200c690                do_imgextract
+                0x8200c944                find_cmd_tbl
+                0x8200c9e8                find_cmd
+                0x8200ca10                cmd_usage
+                0x8200ca6c                _do_help
+                0x8200cbf0                cmd_get_data_size
+                0x8200cce0                serial_printf
+                0x8200cd24                fgetc
+                0x8200cd50                ftstc
+                0x8200cd7c                fputc
+                0x8200cda4                fputs
+                0x8200cdcc                fprintf
+                0x8200ce14                getc
+                0x8200ce44                tstc
+                0x8200ce74                putc
+                0x8200cea4                puts
+                0x8200ced4                printf
+                0x8200cf18                vprintf
+                0x8200cf54                ctrlc
+                0x8200cfa4                disable_ctrlc
+                0x8200cfbc                had_ctrlc
+                0x8200cfcc                clear_ctrlc
+                0x8200cfe0                dbg
+                0x8200cfec                search_device
+                0x8200d01c                console_assign
+                0x8200d064                console_init_f
+                0x8200d074                stdio_print_current_devices
+                0x8200d078                console_init_r
+                0x8200d148                sbrk
+                0x8200d1ac                mem_malloc_init
+                0x8200d1d0                malloc_trim
+                0x8200d294                free
+                0x8200d4b8                cfree
+                0x8200d4bc                malloc
+                0x8200da98                calloc
+                0x8200db70                memalign
+                0x8200dc7c                pvalloc
+                0x8200dc94                valloc
+                0x8200dca0                realloc
+                0x8200e0ac                malloc_usable_size
+                0x8200e0e8                mallopt
+                0x8200e154                env_get_addr
+                0x8200e174                env_get_char_memory
+                0x8200e184                env_get_char
+                0x8200e1b4                set_default_env
+                0x8200e250                env_import
+                0x8200e318                env_relocate
+                0x8200e348                env_get_char_spec
+                0x8200e354                env_init
+                0x8200e370                writeenv
+                0x8200e428                saveenv
+                0x8200e56c                readenv
+                0x8200e628                env_relocate_spec
+                0x8200e690                get_version
+                0x8200e698                jumptable_init
+                0x8200e8b4                do_showvar
+                0x8200efe4                simple_itoa
+                0x8200f040                set_local_var
+                0x8200f200                unset_local_var
+                0x8200f2a4                new_pipe
+                0x8200f314                reserved_word
+                0x8200f5e8                mapset
+                0x8200f610                update_ifs_map
+                0x8200f680                parse_string_outer
+                0x82010534                parse_file_outer
+                0x82010578                u_boot_hush_start
+                0x820105f8                image_check_hcrc
+                0x82010648                image_check_dcrc
+                0x82010684                image_multi_count
+                0x820106a4                image_multi_getimg
+                0x8201072c                getenv_yesno
+                0x82010754                getenv_bootm_low
+                0x82010784                getenv_bootm_size
+                0x820107e4                memmove_wd
+                0x820107f0                genimg_print_size
+                0x82010820                get_table_entry_name
+                0x8201084c                genimg_get_os_name
+                0x82010864                genimg_get_arch_name
+                0x8201087c                genimg_get_type_name
+                0x82010894                genimg_get_comp_name
+                0x820108ac                image_print_contents
+                0x82010a74                get_table_entry_id
+                0x82010ac4                genimg_get_os_id
+                0x82010adc                genimg_get_arch_id
+                0x82010af4                genimg_get_type_id
+                0x82010b0c                genimg_get_comp_id
+                0x82010b24                genimg_get_format
+                0x82010b44                genimg_get_image
+                0x82010b48                genimg_has_config
+                0x82010b50                boot_get_ramdisk
+                0x82010d80                boot_ramdisk_high
+                0x82011080                __show_boot_progress
+                0x82011080                show_boot_progress
+                0x82011084                main_loop
+                0x82011194                readline_into_buffer
+                0x820119fc                readline
+                0x82011a18                parse_line
+                0x82011a98                run_command
+                0x82011e68                do_run
+                0x82011edc                get_ram_size
+                0x82012058                miiphy_init
+                0x82012074                miiphy_register
+                0x82012128                miiphy_set_current_dev
+                0x820121a4                miiphy_get_current_dev
+                0x820121bc                miiphy_read
+                0x82012200                miiphy_write
+                0x82012244                miiphy_listdev
+                0x820122b0                miiphy_info
+                0x8201233c                miiphy_reset
+                0x820123e8                miiphy_speed
+                0x82012478                miiphy_duplex
+                0x82012508                miiphy_is_1000base_x
+                0x82012588                srec_decode
+                0x820127e8                stdio_get_list
+                0x820127f4                stdio_get_by_name
+                0x82012844                stdio_clone
+                0x82012890                stdio_register
+                0x820128d4                stdio_init
+                0x820129c8                wait_ms
+                0x820129ec                usb_stop
+                0x82012a18                usb_disable_asynch
+                0x82012a30                usb_submit_int_msg
+                0x82012a34                usb_control_msg
+                0x82012afc                usb_bulk_msg
+                0x82012b68                usb_maxpacket
+                0x82012b84                usb_set_maxpacket
+                0x82012bec                usb_parse_config
+                0x82012d30                usb_clear_halt
+                0x82012ddc                usb_get_descriptor
+                0x82012e40                usb_get_configuration_no
+                0x82012edc                usb_set_address
+                0x82012f1c                usb_set_interface
+                0x82012fe4                usb_set_configuration
+                0x8201304c                usb_set_protocol
+                0x820130a8                usb_set_idle
+                0x8201310c                usb_get_report
+                0x8201317c                usb_get_class_descriptor
+                0x820131ec                usb_get_string
+                0x82013370                usb_string
+                0x82013474                usb_get_dev_index
+                0x820134a4                usb_alloc_new_device
+                0x8201352c                usb_get_hub_descriptor
+                0x82013588                usb_clear_hub_feature
+                0x820135dc                usb_clear_port_feature
+                0x82013638                usb_set_port_feature
+                0x820136d8                usb_get_hub_status
+                0x82013724                usb_get_port_status
+                0x82013818                usb_hub_reset
+                0x8201382c                usb_hub_allocate
+                0x82013874                usb_hub_probe
+                0x820138cc                usb_new_device
+                0x82013b70                usb_hub_port_connect_change
+                0x82013c58                usb_hub_configure
+                0x82013e64                usb_scan_devices
+                0x82013ef0                usb_init
+                0x8201424c                usb_stor_read
+                0x82014424                usb_stor_write
+                0x820145fc                usb_stor_get_dev
+                0x82014620                usb_show_progress
+                0x82014624                usb_stor_info
+                0x82014694                usb_stor_BBB_comdat
+                0x82014770                usb_stor_CB_comdat
+                0x82014988                usb_stor_CBI_get_status
+                0x82014a54                usb_stor_CB_transport
+                0x82014c50                usb_stor_BBB_clear_endpt_stall
+                0x82014c9c                usb_stor_BBB_transport
+                0x82014e64                usb_storage_probe
+                0x82015078                usb_stor_get_info
+                0x82015304                usb_stor_scan
+                0x82015510                CYGACC_COMM_IF_GETC_TIMEOUT
+                0x82015800                CYGACC_COMM_IF_PUTC
+                0x82015808                parse_num
+                0x82015928                xyzModem_stream_open
+                0x82015a74                xyzModem_stream_read
+                0x82015cc8                xyzModem_stream_close
+                0x82015d18                xyzModem_stream_terminate
+                0x82015dac                xyzModem_error
+ .text          0x82015dcc      0x88c disk/libdisk.o
+                0x82015dcc                get_dev
+                0x82015e24                dev_print
+                0x82016040                init_part
+                0x8201605c                get_partition_info
+                0x82016088                print_part
+                0x820165bc                test_part_dos
+                0x82016610                print_part_dos
+                0x8201663c                get_partition_info_dos
+ .text          0x82016658      0x130 drivers/gpio/libgpio.o
+                0x820166c0                gpio_dir
+                0x82016708                gpio_set
+                0x82016748                gpio_get
+ .text          0x82016788      0x5a0 drivers/i2c/libi2c.o
+                0x82016834                flush_rx
+                0x82016864                i2c_init
+                0x82016900                i2c_probe
+                0x820169cc                i2c_read
+                0x82016b84                i2c_write
+ .text          0x82016d28     0x17c4 drivers/mmc/libmmc.o
+                0x82016d44                __board_mmc_getcd
+                0x82016d44                board_mmc_getcd
+                0x82016d4c                mmc_send_cmd
+                0x82016d5c                mmc_set_blocklen
+                0x82016d90                find_mmc_device
+                0x82016f30                mmc_read_blocks
+                0x820170a0                mmc_go_idle
+                0x820170f0                sd_send_op_cond
+                0x820171f0                mmc_send_op_cond
+                0x82017294                mmc_send_ext_csd
+                0x820172e4                mmc_switch
+                0x82017324                mmc_change_freq
+                0x82017400                sd_switch
+                0x8201746c                sd_change_freq
+                0x82017650                mmc_set_ios
+                0x82017660                mmc_set_clock
+                0x82017680                mmc_set_bus_width
+                0x82017688                mmc_startup
+                0x82017c10                mmc_send_if_cond
+                0x82017c8c                mmc_register
+                0x82017cf4                mmc_get_dev
+                0x82017d08                mmc_init
+                0x82017d94                cpu_mmc_init
+                0x82017d9c                print_mmc_devices
+                0x82017e00                mmc_initialize
+                0x82018454                davinci_mmc_init
+ .text          0x820184ec      0xeec drivers/mtd/libmtd.o
+                0x820184ec                add_mtd_device
+                0x82018558                del_mtd_device
+                0x820185ac                get_mtd_device
+                0x82018628                get_mtd_device_nm
+                0x82018694                put_mtd_device
+                0x82018c84                mtd_erase_callback
+                0x82018cec                del_mtd_partitions
+                0x82018d74                add_mtd_partitions
+ .text          0x820193d8     0x6194 drivers/mtd/nand/libnand.o
+                0x820193d8                nand_init
+                0x8201b328                nand_wait_ready
+                0x8201be8c                nand_erase_nand
+                0x8201c220                nand_scan_ident
+                0x8201c850                nand_scan_tail
+                0x8201cdf8                nand_scan
+                0x8201ce18                nand_release
+                0x8201dcf4                nand_update_bbt
+                0x8201dfcc                nand_scan_bbt
+                0x8201e47c                nand_default_bbt
+                0x8201e530                nand_isbad_bbt
+                0x8201e590                nand_calculate_ecc
+                0x8201e680                nand_correct_data
+                0x8201e83c                nand_erase_opts
+                0x8201eb88                nand_write_skip_bad
+                0x8201ed5c                nand_read_skip_bad
+                0x8201f4d0                davinci_nand_init
+ .text          0x8201f56c     0x82bc drivers/mtd/ubi/libubi.o
+                0x8201f5ac                ubi_get_device
+                0x8201f5cc                ubi_put_device
+                0x8201f5dc                ubi_get_by_major
+                0x8201f628                ubi_major2num
+                0x8201f66c                ubi_attach_mtd_dev
+                0x8201fdac                ubi_detach_mtd_dev
+                0x8201fe78                ubi_init
+                0x8201ffdc                ubi_exit
+                0x82020020                ubi_mtd_param_parse
+                0x82020814                ubi_change_vtbl_record
+                0x820208e4                ubi_read_volume_table
+                0x8202113c                ubi_create_volume
+                0x82021628                ubi_remove_volume
+                0x82021760                ubi_resize_volume
+                0x820219dc                ubi_add_volume
+                0x82021a38                ubi_free_volume
+                0x82021c0c                ubi_start_update
+                0x82021d90                ubi_start_leb_change
+                0x82021e6c                ubi_more_update_data
+                0x820220d0                ubi_more_leb_change_data
+                0x820221ec                ubi_get_device_info
+                0x8202224c                ubi_get_volume_info
+                0x820222c4                ubi_close_volume
+                0x8202232c                ubi_open_volume
+                0x820224c8                ubi_open_volume_nm
+                0x820225a4                ubi_leb_read
+                0x820226bc                ubi_leb_write
+                0x820227a8                ubi_leb_change
+                0x82022880                ubi_leb_erase
+                0x82022900                ubi_leb_unmap
+                0x82022968                ubi_leb_map
+                0x82022a10                ubi_is_mapped
+                0x82022c88                ubi_eba_unmap_leb
+                0x82022d10                ubi_eba_read_leb
+                0x82022f60                ubi_eba_write_leb
+                0x82023558                ubi_eba_write_leb_st
+                0x820238e4                ubi_eba_atomic_leb_change
+                0x82023c7c                ubi_eba_copy_leb
+                0x82024018                ubi_eba_init_scan
+                0x8202426c                ubi_eba_close
+                0x820243a0                ubi_io_read
+                0x820244a0                ubi_io_write
+                0x82024554                ubi_io_sync_erase
+                0x82024730                ubi_io_is_bad
+                0x82024790                ubi_io_mark_bad
+                0x8202481c                ubi_io_read_ec_hdr
+                0x82024ad4                ubi_io_write_ec_hdr
+                0x82024ba4                ubi_io_read_vid_hdr
+                0x82024f44                ubi_io_write_vid_hdr
+                0x82025b00                ubi_wl_get_peb
+                0x82025c88                ubi_wl_put_peb
+                0x82025d78                ubi_wl_scrub_peb
+                0x82025e4c                ubi_wl_flush
+                0x82025e94                ubi_thread
+                0x82025f40                ubi_wl_init_scan
+                0x8202620c                ubi_wl_close
+                0x820264b0                ubi_scan_add_used
+                0x82026be4                ubi_scan_find_sv
+                0x82026c14                ubi_scan_find_seb
+                0x82026c44                ubi_scan_rm_volume
+                0x82026cac                ubi_scan_erase_peb
+                0x82026d7c                ubi_scan_get_free_peb
+                0x82026e4c                ubi_scan_destroy_si
+                0x82027004                ubi_scan
+                0x8202762c                crc32_le
+                0x8202771c                ubi_calc_data_len
+                0x82027750                ubi_check_volume
+                0x82027800                ubi_calculate_reserved
+ .text          0x82027828      0xa8c drivers/net/libnet.o
+                0x82027dec                eth_mdio_enable
+                0x82027e10                davinci_eth_phy_read
+                0x82027ef0                davinci_eth_phy_write
+                0x82027fdc                davinci_emac_initialize
+ .text          0x820282b4        0x0 drivers/pcmcia/libpcmcia.o
+ .text          0x820282b4      0x2a4 drivers/rtc/librtc.o
+                0x820282b4                GregorianDay
+                0x820283a4                to_tm
+                0x820284c0                mktime
+ .text          0x82028558      0x208 drivers/serial/libserial.o
+                0x82028558                NS16550_init
+                0x8202859c                NS16550_reinit
+                0x820285e4                NS16550_putc
+                0x820285f8                NS16550_getc
+                0x8202860c                NS16550_tstc
+                0x8202863c                serial_init
+                0x8202865c                _serial_putc
+                0x82028694                _serial_putc_raw
+                0x820286b0                _serial_puts
+                0x820286d8                _serial_getc
+                0x820286f4                _serial_tstc
+                0x82028708                _serial_setbrg
+                0x82028730                serial_putc
+                0x82028738                serial_putc_raw
+                0x82028740                serial_puts
+                0x82028748                serial_getc
+                0x82028750                serial_tstc
+                0x82028758                serial_setbrg
+ .text          0x82028760      0x528 drivers/spi/libspi.o
+                0x820288a0                spi_init
+                0x820288a4                spi_setup_slave
+                0x820288e8                spi_free_slave
+                0x820288ec                spi_claim_bus
+                0x8202896c                spi_release_bus
+                0x8202897c                spi_xfer
+                0x82028c70                spi_cs_is_valid
+                0x82028c80                spi_cs_activate
+                0x82028c84                spi_cs_deactivate
+ .text          0x82028c88      0xedc drivers/usb/musb/libusb_musb.o
+                0x82028fd0                submit_control_msg
+                0x820292b0                submit_bulk_msg
+                0x820295f0                usb_lowlevel_init
+                0x820296d0                usb_lowlevel_stop
+                0x820296f0                submit_int_msg
+                0x820298f4                musb_start
+                0x82029954                musb_configure_ep
+                0x82029a38                write_fifo
+                0x82029a74                read_fifo
+                0x82029aac                musb_platform_init
+                0x82029b3c                musb_platform_deinit
+ .text          0x82029b64      0xfdc fs/ext2/libext2fs.o
+                0x82029c64                ext2fs_free_node
+                0x82029c88                ext2fs_read_file
+                0x8202a384                ext2fs_find_file1
+                0x8202a5f8                ext2fs_find_file
+                0x8202a66c                ext2fs_ls
+                0x8202a6e4                ext2fs_open
+                0x8202a778                ext2fs_close
+                0x8202a82c                ext2fs_read
+                0x8202a864                ext2fs_mount
+                0x8202a92c                ext2fs_set_blk_dev
+                0x8202a980                ext2fs_devread
+ .text          0x8202ab40     0x168c fs/fat/libfat.o
+                0x8202b210                fat_register_device
+                0x8202b320                do_fat_read
+                0x8202bcc8                file_fat_detectfs
+                0x8202be20                file_fat_ls
+                0x8202be30                file_fat_read
+                0x8202be68                file_getfsname
+                0x8202be80                file_cd
+                0x8202c070                file_detectfs
+                0x8202c0ac                file_ls
+                0x8202c134                file_read
+ .text          0x8202c1cc     0x5974 lib/libgeneric.o
+                0x8202c1cc                cyg_crc16
+                0x8202c214                crc32_no_comp
+                0x8202c2ec                crc32
+                0x8202c300                crc32_wd
+                0x8202c304                display_options
+                0x8202c324                print_size
+                0x8202c45c                print_buffer
+                0x8202c5d4                __div64_32
+                0x8202c6b0                zfree
+                0x8202c6b8                zalloc
+                0x8202c6c8                zunzip
+                0x8202c7b0                gunzip
+                0x8202c870                hcreate_r
+                0x8202c924                hcreate
+                0x8202c930                hdestroy_r
+                0x8202c9a8                hdestroy
+                0x8202c9b4                hsearch_r
+                0x8202cc64                hsearch
+                0x8202cc94                hdelete_r
+                0x8202cd1c                hdelete
+                0x8202cd28                hexport_r
+                0x8202cf48                hexport
+                0x8202cf70                himport_r
+                0x8202d1bc                himport
+                0x8202d3bc                lmb_dump_all
+                0x8202d3c0                lmb_init
+                0x8202d3e8                lmb_add
+                0x8202d3ec                lmb_free
+                0x8202d4f8                lmb_reserve
+                0x8202d500                lmb_overlaps_region
+                0x8202d560                __lmb_alloc_base
+                0x8202d670                lmb_alloc_base
+                0x8202d6a4                lmb_alloc
+                0x8202d6ac                lmb_is_reserved
+                0x8202d6fc                board_lmb_reserve
+                0x8202d6fc                __board_lmb_reserve
+                0x8202d700                __arch_lmb_reserve
+                0x8202d704                ldiv
+                0x8202d754                string_to_ip
+                0x8202d7c8                qsort
+                0x8202d8a8                strcpy
+                0x8202d8c4                strncpy
+                0x8202d8e8                strcat
+                0x8202d918                strncat
+                0x8202d96c                strcmp
+                0x8202d99c                strncmp
+                0x8202d9e0                strchr
+                0x8202da14                strlen
+                0x8202da34                strrchr
+                0x8202da70                strnlen
+                0x8202daa0                strdup
+                0x8202dad8                strspn
+                0x8202db20                strpbrk
+                0x8202db5c                strtok
+                0x8202dbd8                strsep
+                0x8202dc0c                strswab
+                0x8202dc58                memset
+                0x8202dcc4                bcopy
+                0x8202dce8                memcpy
+                0x8202dd48                memmove
+                0x8202dda0                memcmp
+                0x8202ddd4                memscan
+                0x8202de00                strstr
+                0x8202de64                memchr
+                0x8202de94                strmhz
+                0x8202df04                udelay
+                0x8202e474                simple_strtoul
+                0x8202e534                simple_strtol
+                0x8202e55c                ustrtoul
+                0x8202e5cc                simple_strtoull
+                0x8202e6b8                vsprintf
+                0x8202ed0c                sprintf
+                0x8202ed30                panic
+                0x8202ed7c                zcfree
+                0x8202ed84                zcalloc
+                0x8202ed8c                inflate_fast
+                0x8202f31c                inflate_table
+                0x8202f8d4                inflateReset
+                0x8202f950                inflateInit2_
+                0x8202fa58                inflateInit_
+                0x8202fa6c                inflateEnd
+                0x8202fad0                adler32
+                0x8202fe1c                inflate
+                0x82031548                rb_insert_color
+                0x82031674                rb_erase
+                0x820319d0                rb_first
+                0x820319f4                rb_last
+                0x82031a18                rb_next
+                0x82031a7c                rb_prev
+                0x82031ae0                rb_replace_node
+ .text          0x82031b40     0x3acc net/libnet.o
+                0x820322a8                BootpRequest
+                0x820324dc                DhcpRequest
+                0x820324e8                eth_parse_enetaddr
+                0x82032538                eth_getenv_enetaddr
+                0x82032594                eth_setenv_enetaddr
+                0x820325c8                eth_getenv_enetaddr_by_index
+                0x8203260c                eth_get_dev
+                0x8203261c                eth_get_dev_by_name
+                0x82032674                eth_get_dev_by_index
+                0x820326b8                eth_get_dev_index
+                0x820326fc                eth_register
+                0x82032788                eth_initialize
+                0x82032a70                eth_halt
+                0x82032aa0                eth_send
+                0x82032ad8                eth_rx
+                0x82032b04                eth_try_another
+                0x82032bb8                eth_init
+                0x82032c80                eth_set_current
+                0x82032d20                eth_get_name
+                0x82032db0                NetStartAgain
+                0x82032ed4                NetSetHandler
+                0x82032ee4                NetSetTimeout
+                0x82032f14                NetSendPacket
+                0x82032f18                NetCksum
+                0x82032f50                NetCksumOk
+                0x82032f74                NetEthHdrSize
+                0x82032fb4                NetSetEther
+                0x82033060                NetReceive
+                0x82033568                ArpRequest
+                0x82033660                ArpTimeoutCheck
+                0x820336d4                PingSend
+                0x8203381c                NetSetIP
+                0x82033914                NetSendUDPPacket
+                0x82033a50                copy_filename
+                0x82033a9c                random_port
+                0x82033ab8                ip_to_string
+                0x82033b08                VLAN_to_string
+                0x82033b5c                string_to_VLAN
+                0x82033bb8                getenv_VLAN
+                0x82033bc8                NetLoop
+                0x82034c04                NfsStart
+                0x82035328                TftpStart
+ .text          0x8203560c      0x200 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+                0x8203560c                board_init
+                0x82035738                board_eth_init
+                0x820357a0                board_nand_init
+                0x820357b0                board_mmc_init
+ .text          0x8203580c       0x20 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+                0x8203580c                raise
+                0x82035828                __aeabi_unwind_cpp_pr0
+ .text          0x8203582c      0x114 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivsi3.o)
+                0x8203582c                __udivsi3
+                0x8203582c                __aeabi_uidiv
+                0x82035920                __aeabi_uidivmod
+ .text          0x82035940      0x148 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divsi3.o)
+                0x82035940                __aeabi_idiv
+                0x82035940                __divsi3
+                0x82035a68                __aeabi_idivmod
+ .text          0x82035a88        0x4 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_dvmd_tls.o)
+                0x82035a88                __aeabi_ldiv0
+                0x82035a88                __aeabi_idiv0
+ .text          0x82035a8c       0x1c /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_lshrdi3.o)
+                0x82035a8c                __aeabi_llsr
+                0x82035a8c                __lshrdi3
+ .text          0x82035aa8       0x1c /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashrdi3.o)
+                0x82035aa8                __ashrdi3
+                0x82035aa8                __aeabi_lasr
+ .text          0x82035ac4       0x1c /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashldi3.o)
+                0x82035ac4                __ashldi3
+                0x82035ac4                __aeabi_llsl
+ .text          0x82035ae0       0x3c /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_aeabi_uldivmod.o)
+                0x82035ae0                __aeabi_uldivmod
+ .text          0x82035b1c       0x84 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o)
+                0x82035b1c                __gnu_ldivmod_helper
+                0x82035b60                __gnu_uldivmod_helper
+ .text          0x82035ba0      0x4f0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+                0x82035ba0                __divdi3
+ .text          0x82036090      0x488 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+                0x82036090                __udivdi3
+ .text          0x82036518       0x48 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_clzsi2.o)
+                0x82036518                __clzsi2
+
+.glue_7         0x82036560        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x82036560        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x82036560        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x82036560        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x82036560        0x0
+ .iplt          0x00000000        0x0 arch/arm/cpu/arm926ejs/start.o
+                0x82036560                . = ALIGN (0x4)
+
+.rodata         0x82036560     0xd2a6
+ *(SORT(.rodata*))
+ .rodata        0x82036560       0xac arch/arm/lib/libarm.o
+                0x82036560                version_string
+ .rodata        0x8203660c      0x60c board/davinci/common/libdavinci.o
+ .rodata        0x82036c18      0x12c common/libcommon.o
+ .rodata        0x82036d44       0x18 disk/libdisk.o
+ .rodata        0x82036d5c      0x184 drivers/mtd/nand/libnand.o
+ .rodata        0x82036ee0      0x72c drivers/mtd/ubi/libubi.o
+ .rodata        0x8203760c       0x30 drivers/rtc/librtc.o
+ .rodata        0x8203763c       0x10 drivers/serial/libserial.o
+ .rodata        0x8203764c       0x18 fs/fat/libfat.o
+ .rodata        0x82037664      0xff4 lib/libgeneric.o
+                0x82037c7a                hex_asc
+                0x82038630                z_errmsg
+ .rodata        0x82038658        0xc drivers/usb/musb/libusb_musb.o
+ .rodata        0x82038664       0x13 drivers/i2c/libi2c.o
+ .rodata        0x82038677       0x12 drivers/mtd/libmtd.o
+ .rodata        0x82038689        0xe net/libnet.o
+ .rodata.str1.1
+                0x82038697       0x22 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .rodata.str1.1
+                0x820386b9      0x33c arch/arm/lib/libarm.o
+                                0x359 (size before relaxing)
+ .rodata.str1.1
+                0x820389f5      0x680 board/davinci/common/libdavinci.o
+                                0x689 (size before relaxing)
+ .rodata.str1.1
+                0x82039075     0x6e29 common/libcommon.o
+                               0x7661 (size before relaxing)
+ .rodata.str1.1
+                0x8203fe9e      0x2b5 disk/libdisk.o
+                                0x2df (size before relaxing)
+ .rodata.str1.1
+                0x82040153       0x36 drivers/i2c/libi2c.o
+ .rodata.str1.1
+                0x82040189       0xf9 drivers/mmc/libmmc.o
+                                0x105 (size before relaxing)
+ .rodata.str1.1
+                0x82040282      0x244 drivers/mtd/libmtd.o
+ .rodata.str1.1
+                0x820404c6      0xaff drivers/mtd/nand/libnand.o
+                                0xb39 (size before relaxing)
+ .rodata.str1.1
+                0x82040fc5     0x175f drivers/mtd/ubi/libubi.o
+                               0x1b60 (size before relaxing)
+ .rodata.str1.1
+                0x82042724      0x1d4 drivers/net/libnet.o
+ .rodata.str1.1
+                0x820428f8       0x95 drivers/spi/libspi.o
+ .rodata.str1.1
+                0x8204298d      0x293 fs/ext2/libext2fs.o
+                                0x29a (size before relaxing)
+ .rodata.str1.1
+                0x82042c20      0x195 fs/fat/libfat.o
+                                0x1ca (size before relaxing)
+ .rodata.str1.1
+                0x82042db5      0x33f lib/libgeneric.o
+                                0x35a (size before relaxing)
+ .rodata.str1.1
+                0x820430f4      0x6f7 net/libnet.o
+                                0x89d (size before relaxing)
+ .rodata.str1.1
+                0x820437eb       0x1b /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+
+.hash           0x82043808       0x3c
+ .hash          0x82043808       0x3c arch/arm/cpu/arm926ejs/start.o
+
+.ARM.extab      0x82043844        0x0
+ .ARM.extab     0x82043844        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+ .ARM.extab     0x82043844        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+
+.ARM.exidx      0x82043844        0x8
+ .ARM.exidx     0x82043844        0x8 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x8204384c        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+                                  0x8 (size before relaxing)
+                0x8204384c                . = ALIGN (0x4)
+
+.data           0x8204384c     0x234c
+ *(.data)
+ .data          0x8204384c        0x0 arch/arm/cpu/arm926ejs/start.o
+ .data          0x8204384c        0x0 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .data          0x8204384c        0x0 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .data          0x8204384c       0x28 arch/arm/lib/libarm.o
+                0x8204384c                init_sequence
+ .data          0x82043874        0x0 board/davinci/common/libdavinci.o
+ .data          0x82043874      0xbb8 common/libcommon.o
+                0x82043874                load_addr
+                0x82043a14                op_table
+                0x82043a80                dp_last_length
+                0x82043f90                default_environment
+                0x82044174                env_name_spec
+                0x82044420                stdio_names
+ .data          0x8204442c        0x0 disk/libdisk.o
+ .data          0x8204442c        0x0 drivers/gpio/libgpio.o
+ .data          0x8204442c        0x0 drivers/i2c/libi2c.o
+ .data          0x8204442c       0x54 drivers/mmc/libmmc.o
+                0x8204442c                multipliers
+                0x8204446c                fbase
+ .data          0x82044480        0x0 drivers/mtd/libmtd.o
+ .data          0x82044480     0x1378 drivers/mtd/nand/libnand.o
+                0x82044480                nand_curr_device
+                0x82044eb0                nand_manuf_ids
+                0x82044f00                nand_flash_ids
+ .data          0x820457f8        0x0 drivers/mtd/ubi/libubi.o
+ .data          0x820457f8        0x1 drivers/net/libnet.o
+ .data          0x820457f9        0x0 drivers/pcmcia/libpcmcia.o
+ *fill*         0x820457f9        0x3 
+ .data          0x820457fc       0x30 drivers/rtc/librtc.o
+ .data          0x8204582c        0x0 drivers/serial/libserial.o
+ .data          0x8204582c        0x0 drivers/spi/libspi.o
+ .data          0x8204582c        0xc drivers/usb/musb/libusb_musb.o
+                0x8204582c                musb_cfg
+ .data          0x82045838        0x8 fs/ext2/libext2fs.o
+                0x82045838                indir1_blkno
+                0x8204583c                indir2_blkno
+ .data          0x82045840      0x208 fs/fat/libfat.o
+                0x82045844                file_cwd
+ .data          0x82045a48      0x100 lib/libgeneric.o
+                0x82045a48                _ctype
+ .data          0x82045b48       0x28 net/libnet.o
+                0x82045b48                NetOurVLAN
+                0x82045b4a                NetOurNativeVLAN
+                0x82045b4c                NetBcastAddr
+                0x82045b68                TftpRRQTimeoutCountMax
+                0x82045b6c                TftpRRQTimeoutMSecs
+ .data          0x82045b70       0x28 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .data          0x82045b98        0x0 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivsi3.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divsi3.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_dvmd_tls.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_lshrdi3.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashrdi3.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashldi3.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+ .data          0x82045b98        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_clzsi2.o)
+
+.got            0x82045b98        0x0
+ .got           0x00000000        0x0 arch/arm/cpu/arm926ejs/start.o
+
+.got.plt        0x82045b98        0xc
+ .got.plt       0x82045b98        0xc arch/arm/cpu/arm926ejs/start.o
+                0x82045b98                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x82045ba4        0x0
+ .igot.plt      0x00000000        0x0 arch/arm/cpu/arm926ejs/start.o
+                0x82045ba4                . = ALIGN (0x4)
+                0x82045ba4                . = .
+                0x82045ba4                __u_boot_cmd_start = .
+
+.u_boot_cmd     0x82045ba4      0x6f0
+ *(.u_boot_cmd)
+ .u_boot_cmd    0x82045ba4      0x6f0 common/libcommon.o
+                0x82045ba4                __u_boot_cmd_bdinfo
+                0x82045bbc                __u_boot_cmd_reset
+                0x82045bd4                __u_boot_cmd_go
+                0x82045bec                __u_boot_cmd_iminfo
+                0x82045c04                __u_boot_cmd_bootd
+                0x82045c1c                __u_boot_cmd_boot
+                0x82045c34                __u_boot_cmd_bootm
+                0x82045c4c                __u_boot_cmd_dcache
+                0x82045c64                __u_boot_cmd_icache
+                0x82045c7c                __u_boot_cmd_coninfo
+                0x82045c94                __u_boot_cmd_echo
+                0x82045cac                __u_boot_cmd_exit
+                0x82045cc4                __u_boot_cmd_ext2load
+                0x82045cdc                __u_boot_cmd_ext2ls
+                0x82045cf4                __u_boot_cmd_fatinfo
+                0x82045d0c                __u_boot_cmd_fatls
+                0x82045d24                __u_boot_cmd_fatload
+                0x82045d3c                __u_boot_cmd_gpio
+                0x82045d54                __u_boot_cmd_question_mark
+                0x82045d6c                __u_boot_cmd_help
+                0x82045d84                __u_boot_cmd_i2c
+                0x82045d9c                __u_boot_cmd_itest
+                0x82045db4                __u_boot_cmd_lcdregset
+                0x82045dcc                __u_boot_cmd_lcdregget
+                0x82045de4                __u_boot_cmd_lcdawake
+                0x82045dfc                __u_boot_cmd_lcdsleep
+                0x82045e14                __u_boot_cmd_lcdinit
+                0x82045e2c                __u_boot_cmd_loady
+                0x82045e44                __u_boot_cmd_loadb
+                0x82045e5c                __u_boot_cmd_saves
+                0x82045e74                __u_boot_cmd_loads
+                0x82045e8c                __u_boot_cmd_mwc
+                0x82045ea4                __u_boot_cmd_mdc
+                0x82045ebc                __u_boot_cmd_mtest
+                0x82045ed4                __u_boot_cmd_loop
+                0x82045eec                __u_boot_cmd_base
+                0x82045f04                __u_boot_cmd_crc32
+                0x82045f1c                __u_boot_cmd_cmp
+                0x82045f34                __u_boot_cmd_cp
+                0x82045f4c                __u_boot_cmd_mw
+                0x82045f64                __u_boot_cmd_nm
+                0x82045f7c                __u_boot_cmd_mm
+                0x82045f94                __u_boot_cmd_md
+                0x82045fac                __u_boot_cmd_sleep
+                0x82045fc4                __u_boot_cmd_mmc
+                0x82045fdc                __u_boot_cmd_mmcinfo
+                0x82045ff4                __u_boot_cmd_mtdparts
+                0x8204600c                __u_boot_cmd_chpart
+                0x82046024                __u_boot_cmd_nboot
+                0x8204603c                __u_boot_cmd_nand
+                0x82046054                __u_boot_cmd_ping
+                0x8204606c                __u_boot_cmd_nfs
+                0x82046084                __u_boot_cmd_dhcp
+                0x8204609c                __u_boot_cmd_tftpboot
+                0x820460b4                __u_boot_cmd_bootp
+                0x820460cc                __u_boot_cmd_run
+                0x820460e4                __u_boot_cmd_askenv
+                0x820460fc                __u_boot_cmd_setenv
+                0x82046114                __u_boot_cmd_printenv
+                0x8204612c                __u_boot_cmd_editenv
+                0x82046144                __u_boot_cmd_env
+                0x8204615c                __u_boot_cmd_saveenv
+                0x82046174                __u_boot_cmd_pinmux
+                0x8204618c                __u_boot_cmd_source
+                0x820461a4                __u_boot_cmd_sspi
+                0x820461bc                __u_boot_cmd_true
+                0x820461d4                __u_boot_cmd_false
+                0x820461ec                __u_boot_cmd_test
+                0x82046204                __u_boot_cmd_ubi
+                0x8204621c                __u_boot_cmd_usbboot
+                0x82046234                __u_boot_cmd_usb
+                0x8204624c                __u_boot_cmd_version
+                0x82046264                __u_boot_cmd_imxtract
+                0x8204627c                __u_boot_cmd_showvar
+                0x82046294                __u_boot_cmd_end = .
+                0x82046294                . = ALIGN (0x4)
+
+.rel.dyn        0x82046294     0x6e78
+                0x82046294                __rel_dyn_start = .
+ *(.rel*)
+ .rel.got       0x00000000        0x0 arch/arm/cpu/arm926ejs/start.o
+ .rel.plt       0x00000000        0x0 arch/arm/cpu/arm926ejs/start.o
+ .rel.iplt      0x00000000        0x0 arch/arm/cpu/arm926ejs/start.o
+ .rel.text      0x82046294     0x4bb8 arch/arm/cpu/arm926ejs/start.o
+ .rel.rodata    0x8204ae4c      0x8a0 arch/arm/cpu/arm926ejs/start.o
+ .rel.data      0x8204b6ec     0x10f0 arch/arm/cpu/arm926ejs/start.o
+ .rel.u_boot_cmd
+                0x8204c7dc      0x930 arch/arm/cpu/arm926ejs/start.o
+                0x8204d10c                __rel_dyn_end = .
+
+.dynsym         0x8204d10c       0xa0
+                0x8204d10c                __dynsym_start = .
+ *(.dynsym)
+ .dynsym        0x8204d10c       0xa0 arch/arm/cpu/arm926ejs/start.o
+
+.bss            0x82046294    0x48c94
+                0x82046294                __bss_start = .
+ *(.bss)
+ .bss           0x82046294        0x0 arch/arm/cpu/arm926ejs/start.o
+ .bss           0x82046294        0x0 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .bss           0x82046294        0x0 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .bss           0x82046294        0x8 arch/arm/lib/libarm.o
+                0x82046294                monitor_flash_len
+ .bss           0x8204629c        0x0 board/davinci/common/libdavinci.o
+ *fill*         0x8204629c        0x4 
+ .bss           0x820462a0    0x113fc common/libcommon.o
+                0x820463f0                his_pad_count
+                0x820463f4                his_pad_char
+                0x8204640d                his_eol
+                0x82046414                os_data_init
+                0x82046424                os_data_char
+                0x82046428                his_quote
+                0x8204642c                send_ptr
+                0x82046430                send_parms
+                0x82046448                dp_last_addr
+                0x8204644c                dp_last_size
+                0x82046450                mm_last_addr
+                0x82046454                mm_last_size
+                0x82046458                current_mtd_dev
+                0x8204645c                devices
+                0x82046464                current_mtd_partnum
+                0x82046678                mtdids
+                0x82046820                mem_malloc_brk
+                0x82046824                mem_malloc_start
+                0x82046828                mem_malloc_end
+                0x82046864                env_ptr
+                0x82046894                last_return_code
+                0x82046dbc                nesting_level
+                0x82046dcc                hist_num
+                0x82046dd0                hist_lines
+                0x8204bde4                hist_list
+                0x8204be34                console_buffer
+                0x8204c280                stdio_devices
+                0x8204c28c                usb_started
+ .bss           0x8205769c        0x0 disk/libdisk.o
+ .bss           0x8205769c        0x0 drivers/gpio/libgpio.o
+ .bss           0x8205769c        0x0 drivers/i2c/libi2c.o
+ .bss           0x8205769c        0x8 drivers/mmc/libmmc.o
+ .bss           0x820576a4       0x88 drivers/mtd/libmtd.o
+                0x820576a4                mtd_table
+                0x82057724                mtd_partitions
+ *fill*         0x8205772c        0x4 
+ .bss           0x82057730      0x1d0 drivers/mtd/nand/libnand.o
+                0x82057730                nand_info
+ .bss           0x82057900      0x9c0 drivers/mtd/ubi/libubi.o
+                0x82057900                ubi_devices
+                0x82057984                ubi_class
+ .bss           0x820582c0     0x3c64 drivers/net/libnet.o
+                0x820582c0                emac_dbg
+                0x820582c8                phy
+ .bss           0x8205bf24        0x0 drivers/pcmcia/libpcmcia.o
+ .bss           0x8205bf24        0x0 drivers/rtc/librtc.o
+ .bss           0x8205bf24        0x0 drivers/serial/libserial.o
+ .bss           0x8205bf24        0x0 drivers/spi/libspi.o
+ .bss           0x8205bf24        0x8 drivers/usb/musb/libusb_musb.o
+                0x8205bf24                musbr
+                0x8205bf28                dregs
+ .bss           0x8205bf2c       0x70 fs/ext2/libext2fs.o
+                0x8205bf30                ext2fs_root
+                0x8205bf34                indir1_block
+                0x8205bf38                indir1_size
+                0x8205bf3c                indir2_block
+                0x8205bf40                indir2_size
+                0x8205bf44                symlinknest
+                0x8205bf48                ext2fs_file
+ .bss           0x8205bf9c    0x30008 fs/fat/libfat.o
+                0x8205bfa4                get_vfatname_block
+                0x8206bfa4                do_fat_read_block
+                0x8207bfa4                get_dentfromdir_block
+ .bss           0x8208bfa4       0x14 lib/libgeneric.o
+                0x8208bfa4                errno
+                0x8208bfb4                ___strtok
+ .bss           0x8208bfb8     0x2f70 net/libnet.o
+                0x8208bfb8                dhcp_leasetime
+                0x8208bfbc                NetDHCPServerIP
+                0x8208bfc0                BootpID
+                0x8208bfc4                dhcp_state
+                0x8208bfc8                BootpTry
+                0x8208bfe0                NetState
+                0x8208bfe4                NetPingIP
+                0x8208bff0                NetRestartWrap
+                0x8208c008                NetOurEther
+                0x8208c010                NetRxPacket
+                0x8208c014                NetRxPacketLen
+                0x8208c018                NetOurIP
+                0x8208c01c                NetArpWaitPacketIP
+                0x8208c020                NetArpWaitPacketMAC
+                0x8208c024                NetArpWaitReplyIP
+                0x8208c028                NetArpWaitTxPacket
+                0x8208c02c                NetArpWaitTxPacketSize
+                0x8208c030                NetTxPacket
+                0x8208c034                NetOurSubnetMask
+                0x8208c038                NetOurGatewayIP
+                0x8208c03c                NetArpWaitTimerStart
+                0x8208c040                NetArpWaitTry
+                0x8208c04a                NetEtherNullAddr
+                0x8208c050                NetIPID
+                0x8208c056                PktBuf
+                0x8208de78                NetRxPackets
+                0x8208de88                NetArpWaitPacketBuf
+                0x8208e4ac                NetServerIP
+                0x8208e4b0                NetBootFileXferSize
+                0x8208e4b4                BootFile
+                0x8208e534                NetServerEther
+                0x8208e53a                NetBootFileSize
+                0x8208e53c                NetOurRootPath
+                0x8208e57c                NetOurHostName
+                0x8208e59c                NetOurNISDomain
+                0x8208e5bc                NetOurDNS2IP
+                0x8208e5c0                NetOurDNSIP
+ .bss           0x8208ef28        0x0 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .bss           0x8208ef28        0x0 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivsi3.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divsi3.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_dvmd_tls.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_lshrdi3.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashrdi3.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashldi3.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+ .bss           0x8208ef28        0x0 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_clzsi2.o)
+                0x8208ef28                . = ALIGN (0x4)
+                0x8208ef28                _end = .
+
+.dynbss         0x8204d1ac        0x0 load address 0x8208ef28
+ .dynbss        0x00000000        0x0 arch/arm/cpu/arm926ejs/start.o
+
+/DISCARD/
+ *(.dynstr*)
+ *(.dynamic*)
+ *(.plt*)
+ *(.interp*)
+ *(.gnu*)
+Address of section .text set to 0x82000000
+LOAD arch/arm/cpu/arm926ejs/start.o
+START GROUP
+LOAD api/libapi.o
+LOAD arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+LOAD arch/arm/cpu/arm926ejs/libarm926ejs.o
+LOAD arch/arm/lib/libarm.o
+LOAD board/davinci/common/libdavinci.o
+LOAD common/libcommon.o
+LOAD disk/libdisk.o
+LOAD drivers/bios_emulator/libatibiosemu.o
+LOAD drivers/block/libblock.o
+LOAD drivers/dma/libdma.o
+LOAD drivers/fpga/libfpga.o
+LOAD drivers/gpio/libgpio.o
+LOAD drivers/hwmon/libhwmon.o
+LOAD drivers/i2c/libi2c.o
+LOAD drivers/input/libinput.o
+LOAD drivers/misc/libmisc.o
+LOAD drivers/mmc/libmmc.o
+LOAD drivers/mtd/libmtd.o
+LOAD drivers/mtd/nand/libnand.o
+LOAD drivers/mtd/onenand/libonenand.o
+LOAD drivers/mtd/spi/libspi_flash.o
+LOAD drivers/mtd/ubi/libubi.o
+LOAD drivers/net/libnet.o
+LOAD drivers/net/phy/libphy.o
+LOAD drivers/pci/libpci.o
+LOAD drivers/pcmcia/libpcmcia.o
+LOAD drivers/power/libpower.o
+LOAD drivers/rtc/librtc.o
+LOAD drivers/serial/libserial.o
+LOAD drivers/spi/libspi.o
+LOAD drivers/twserial/libtws.o
+LOAD drivers/usb/gadget/libusb_gadget.o
+LOAD drivers/usb/host/libusb_host.o
+LOAD drivers/usb/musb/libusb_musb.o
+LOAD drivers/usb/phy/libusb_phy.o
+LOAD drivers/video/libvideo.o
+LOAD drivers/watchdog/libwatchdog.o
+LOAD fs/cramfs/libcramfs.o
+LOAD fs/ext2/libext2fs.o
+LOAD fs/fat/libfat.o
+LOAD fs/fdos/libfdos.o
+LOAD fs/jffs2/libjffs2.o
+LOAD fs/reiserfs/libreiserfs.o
+LOAD fs/ubifs/libubifs.o
+LOAD fs/yaffs2/libyaffs2.o
+LOAD lib/libfdt/libfdt.o
+LOAD lib/libgeneric.o
+LOAD lib/lzma/liblzma.o
+LOAD lib/lzo/liblzo.o
+LOAD net/libnet.o
+LOAD post/libpost.o
+LOAD board/davinci/dm365v2r/libdm365v2r.o
+END GROUP
+LOAD /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+LOAD /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a
+OUTPUT(u-boot elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x27
+ .ARM.attributes
+                0x00000000       0x1b arch/arm/cpu/arm926ejs/start.o
+ .ARM.attributes
+                0x0000001b       0x29 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .ARM.attributes
+                0x00000044       0x2b arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .ARM.attributes
+                0x0000006f       0x2b arch/arm/lib/libarm.o
+ .ARM.attributes
+                0x0000009a       0x2b board/davinci/common/libdavinci.o
+ .ARM.attributes
+                0x000000c5       0x2b common/libcommon.o
+ .ARM.attributes
+                0x000000f0       0x2b disk/libdisk.o
+ .ARM.attributes
+                0x0000011b       0x2b drivers/gpio/libgpio.o
+ .ARM.attributes
+                0x00000146       0x2b drivers/i2c/libi2c.o
+ .ARM.attributes
+                0x00000171       0x2b drivers/mmc/libmmc.o
+ .ARM.attributes
+                0x0000019c       0x2b drivers/mtd/libmtd.o
+ .ARM.attributes
+                0x000001c7       0x2b drivers/mtd/nand/libnand.o
+ .ARM.attributes
+                0x000001f2       0x2b drivers/mtd/ubi/libubi.o
+ .ARM.attributes
+                0x0000021d       0x2b drivers/net/libnet.o
+ .ARM.attributes
+                0x00000248       0x2b drivers/pcmcia/libpcmcia.o
+ .ARM.attributes
+                0x00000273       0x2b drivers/rtc/librtc.o
+ .ARM.attributes
+                0x0000029e       0x2b drivers/serial/libserial.o
+ .ARM.attributes
+                0x000002c9       0x2b drivers/spi/libspi.o
+ .ARM.attributes
+                0x000002f4       0x2b drivers/usb/musb/libusb_musb.o
+ .ARM.attributes
+                0x0000031f       0x2b fs/ext2/libext2fs.o
+ .ARM.attributes
+                0x0000034a       0x2b fs/fat/libfat.o
+ .ARM.attributes
+                0x00000375       0x2b lib/libgeneric.o
+ .ARM.attributes
+                0x000003a0       0x2b net/libnet.o
+ .ARM.attributes
+                0x000003cb       0x2b board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .ARM.attributes
+                0x000003f6       0x2b /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+ .ARM.attributes
+                0x00000421       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000439       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000451       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000469       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_lshrdi3.o)
+ .ARM.attributes
+                0x00000481       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashrdi3.o)
+ .ARM.attributes
+                0x00000499       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_ashldi3.o)
+ .ARM.attributes
+                0x000004b1       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x000004c9       0x30 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x000004f9       0x30 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x00000529       0x30 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x00000559       0x18 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_clzsi2.o)
+
+.comment        0x00000000       0x30
+ .comment       0x00000000       0x30 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+                                0x157 (size before relaxing)
+ .comment       0x00000000       0x31 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .comment       0x00000000      0x126 arch/arm/lib/libarm.o
+ .comment       0x00000000       0x62 board/davinci/common/libdavinci.o
+ .comment       0x00000000      0x930 common/libcommon.o
+ .comment       0x00000000       0x62 disk/libdisk.o
+ .comment       0x00000000       0x31 drivers/gpio/libgpio.o
+ .comment       0x00000000       0x31 drivers/i2c/libi2c.o
+ .comment       0x00000000       0x62 drivers/mmc/libmmc.o
+ .comment       0x00000000       0x62 drivers/mtd/libmtd.o
+ .comment       0x00000000      0x157 drivers/mtd/nand/libnand.o
+ .comment       0x00000000      0x24c drivers/mtd/ubi/libubi.o
+ .comment       0x00000000       0x31 drivers/net/libnet.o
+ .comment       0x00000000       0x62 drivers/pcmcia/libpcmcia.o
+ .comment       0x00000000       0x31 drivers/rtc/librtc.o
+ .comment       0x00000000       0x62 drivers/serial/libserial.o
+ .comment       0x00000000       0x31 drivers/spi/libspi.o
+ .comment       0x00000000       0x93 drivers/usb/musb/libusb_musb.o
+ .comment       0x00000000       0x62 fs/ext2/libext2fs.o
+ .comment       0x00000000       0x62 fs/fat/libfat.o
+ .comment       0x00000000      0x372 lib/libgeneric.o
+ .comment       0x00000000       0xf5 net/libnet.o
+ .comment       0x00000000       0x31 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .comment       0x00000000       0x31 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+
+.debug_line     0x00000000    0x13c23
+ .debug_line    0x00000000       0xb6 arch/arm/cpu/arm926ejs/start.o
+ .debug_line    0x000000b6      0x6f8 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .debug_line    0x000007ae       0x6d arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .debug_line    0x0000081b      0x7fa arch/arm/lib/libarm.o
+ .debug_line    0x00001015      0x28f board/davinci/common/libdavinci.o
+ .debug_line    0x000012a4     0x7082 common/libcommon.o
+ .debug_line    0x00008326      0x39c disk/libdisk.o
+ .debug_line    0x000086c2       0xf1 drivers/gpio/libgpio.o
+ .debug_line    0x000087b3      0x1d8 drivers/i2c/libi2c.o
+ .debug_line    0x0000898b      0x862 drivers/mmc/libmmc.o
+ .debug_line    0x000091ed      0x566 drivers/mtd/libmtd.o
+ .debug_line    0x00009753     0x1d2a drivers/mtd/nand/libnand.o
+ .debug_line    0x0000b47d     0x31a6 drivers/mtd/ubi/libubi.o
+ .debug_line    0x0000e623      0x3be drivers/net/libnet.o
+ .debug_line    0x0000e9e1       0x3a drivers/pcmcia/libpcmcia.o
+ .debug_line    0x0000ea1b       0xf7 drivers/rtc/librtc.o
+ .debug_line    0x0000eb12      0x21d drivers/serial/libserial.o
+ .debug_line    0x0000ed2f      0x2f8 drivers/spi/libspi.o
+ .debug_line    0x0000f027      0x5db drivers/usb/musb/libusb_musb.o
+ .debug_line    0x0000f602      0x48d fs/ext2/libext2fs.o
+ .debug_line    0x0000fa8f      0x68e fs/fat/libfat.o
+ .debug_line    0x0001011d     0x254b lib/libgeneric.o
+ .debug_line    0x00012668     0x12bc net/libnet.o
+ .debug_line    0x00013924      0x290 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .debug_line    0x00013bb4       0x6f /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+
+.debug_info     0x00000000    0x767f6
+ .debug_info    0x00000000       0x63 arch/arm/cpu/arm926ejs/start.o
+ .debug_info    0x00000063     0x24d0 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .debug_info    0x00002533      0x114 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .debug_info    0x00002647     0x2b48 arch/arm/lib/libarm.o
+ .debug_info    0x0000518f      0x838 board/davinci/common/libdavinci.o
+ .debug_info    0x000059c7    0x2c51f common/libcommon.o
+ .debug_info    0x00031ee6     0x13b4 disk/libdisk.o
+ .debug_info    0x0003329a      0x4a4 drivers/gpio/libgpio.o
+ .debug_info    0x0003373e      0x519 drivers/i2c/libi2c.o
+ .debug_info    0x00033c57     0x2a18 drivers/mmc/libmmc.o
+ .debug_info    0x0003666f     0x2329 drivers/mtd/libmtd.o
+ .debug_info    0x00038998     0xcc59 drivers/mtd/nand/libnand.o
+ .debug_info    0x000455f1    0x18589 drivers/mtd/ubi/libubi.o
+ .debug_info    0x0005db7a     0x1b8d drivers/net/libnet.o
+ .debug_info    0x0005f707       0xe4 drivers/pcmcia/libpcmcia.o
+ .debug_info    0x0005f7eb      0x27a drivers/rtc/librtc.o
+ .debug_info    0x0005fa65      0xd67 drivers/serial/libserial.o
+ .debug_info    0x000607cc      0xd6a drivers/spi/libspi.o
+ .debug_info    0x00061536     0x2825 drivers/usb/musb/libusb_musb.o
+ .debug_info    0x00063d5b     0x1a7b fs/ext2/libext2fs.o
+ .debug_info    0x000657d6     0x2124 fs/fat/libfat.o
+ .debug_info    0x000678fa     0x623c lib/libgeneric.o
+ .debug_info    0x0006db36     0x7550 net/libnet.o
+ .debug_info    0x00075086     0x1674 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .debug_info    0x000766fa       0xfc /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+
+.debug_abbrev   0x00000000    0x14560
+ .debug_abbrev  0x00000000       0x14 arch/arm/cpu/arm926ejs/start.o
+ .debug_abbrev  0x00000014      0x7cd arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .debug_abbrev  0x000007e1       0xb6 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .debug_abbrev  0x00000897      0xbac arch/arm/lib/libarm.o
+ .debug_abbrev  0x00001443      0x311 board/davinci/common/libdavinci.o
+ .debug_abbrev  0x00001754     0x7eb4 common/libcommon.o
+ .debug_abbrev  0x00009608      0x595 disk/libdisk.o
+ .debug_abbrev  0x00009b9d      0x1c0 drivers/gpio/libgpio.o
+ .debug_abbrev  0x00009d5d      0x1b5 drivers/i2c/libi2c.o
+ .debug_abbrev  0x00009f12      0x862 drivers/mmc/libmmc.o
+ .debug_abbrev  0x0000a774      0x5fb drivers/mtd/libmtd.o
+ .debug_abbrev  0x0000ad6f     0x15d5 drivers/mtd/nand/libnand.o
+ .debug_abbrev  0x0000c344     0x2b8c drivers/mtd/ubi/libubi.o
+ .debug_abbrev  0x0000eed0      0x3df drivers/net/libnet.o
+ .debug_abbrev  0x0000f2af       0x4c drivers/pcmcia/libpcmcia.o
+ .debug_abbrev  0x0000f2fb      0x10d drivers/rtc/librtc.o
+ .debug_abbrev  0x0000f408      0x35b drivers/serial/libserial.o
+ .debug_abbrev  0x0000f763      0x3d4 drivers/spi/libspi.o
+ .debug_abbrev  0x0000fb37      0x7dd drivers/usb/musb/libusb_musb.o
+ .debug_abbrev  0x00010314      0x50e fs/ext2/libext2fs.o
+ .debug_abbrev  0x00010822      0x66d fs/fat/libfat.o
+ .debug_abbrev  0x00010e8f     0x1df7 lib/libgeneric.o
+ .debug_abbrev  0x00012c86     0x15cc net/libnet.o
+ .debug_abbrev  0x00014252      0x259 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .debug_abbrev  0x000144ab       0xb5 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+
+.debug_aranges  0x00000000     0x1040
+ .debug_aranges
+                0x00000000       0x20 arch/arm/cpu/arm926ejs/start.o
+ .debug_aranges
+                0x00000020      0x100 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .debug_aranges
+                0x00000120       0x20 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .debug_aranges
+                0x00000140       0xc0 arch/arm/lib/libarm.o
+ .debug_aranges
+                0x00000200       0x40 board/davinci/common/libdavinci.o
+ .debug_aranges
+                0x00000240      0x5f0 common/libcommon.o
+ .debug_aranges
+                0x00000830       0x40 disk/libdisk.o
+ .debug_aranges
+                0x00000870       0x20 drivers/gpio/libgpio.o
+ .debug_aranges
+                0x00000890       0x20 drivers/i2c/libi2c.o
+ .debug_aranges
+                0x000008b0       0x40 drivers/mmc/libmmc.o
+ .debug_aranges
+                0x000008f0       0x40 drivers/mtd/libmtd.o
+ .debug_aranges
+                0x00000930       0xd8 drivers/mtd/nand/libnand.o
+ .debug_aranges
+                0x00000a08      0x178 drivers/mtd/ubi/libubi.o
+ .debug_aranges
+                0x00000b80       0x20 drivers/net/libnet.o
+ .debug_aranges
+                0x00000ba0       0x30 drivers/pcmcia/libpcmcia.o
+ .debug_aranges
+                0x00000bd0       0x20 drivers/rtc/librtc.o
+ .debug_aranges
+                0x00000bf0       0x40 drivers/serial/libserial.o
+ .debug_aranges
+                0x00000c30       0x20 drivers/spi/libspi.o
+ .debug_aranges
+                0x00000c50       0x60 drivers/usb/musb/libusb_musb.o
+ .debug_aranges
+                0x00000cb0       0x40 fs/ext2/libext2fs.o
+ .debug_aranges
+                0x00000cf0       0x40 fs/fat/libfat.o
+ .debug_aranges
+                0x00000d30      0x230 lib/libgeneric.o
+ .debug_aranges
+                0x00000f60       0xa0 net/libnet.o
+ .debug_aranges
+                0x00001000       0x20 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .debug_aranges
+                0x00001020       0x20 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+
+.debug_frame    0x00000000     0x7424
+ .debug_frame   0x00000000      0x288 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .debug_frame   0x00000288       0x28 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .debug_frame   0x000002b0      0x3a8 arch/arm/lib/libarm.o
+ .debug_frame   0x00000658       0xd0 board/davinci/common/libdavinci.o
+ .debug_frame   0x00000728     0x2c20 common/libcommon.o
+ .debug_frame   0x00003348      0x16c disk/libdisk.o
+ .debug_frame   0x000034b4       0x74 drivers/gpio/libgpio.o
+ .debug_frame   0x00003528       0xe8 drivers/i2c/libi2c.o
+ .debug_frame   0x00003610      0x3b8 drivers/mmc/libmmc.o
+ .debug_frame   0x000039c8      0x308 drivers/mtd/libmtd.o
+ .debug_frame   0x00003cd0      0xae8 drivers/mtd/nand/libnand.o
+ .debug_frame   0x000047b8      0xd10 drivers/mtd/ubi/libubi.o
+ .debug_frame   0x000054c8      0x1b4 drivers/net/libnet.o
+ .debug_frame   0x0000567c       0x74 drivers/rtc/librtc.o
+ .debug_frame   0x000056f0      0x188 drivers/serial/libserial.o
+ .debug_frame   0x00005878       0xf4 drivers/spi/libspi.o
+ .debug_frame   0x0000596c      0x1fc drivers/usb/musb/libusb_musb.o
+ .debug_frame   0x00005b68      0x1ac fs/ext2/libext2fs.o
+ .debug_frame   0x00005d14      0x23c fs/fat/libfat.o
+ .debug_frame   0x00005f50      0xad4 lib/libgeneric.o
+ .debug_frame   0x00006a24      0x830 net/libnet.o
+ .debug_frame   0x00007254       0x6c board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .debug_frame   0x000072c0       0x38 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+ .debug_frame   0x000072f8       0x20 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00007318       0x20 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divsi3.o)
+ .debug_frame   0x00007338       0x28 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00007360       0x54 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(bpabi.o)
+ .debug_frame   0x000073b4       0x38 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_divdi3.o)
+ .debug_frame   0x000073ec       0x38 /opt/codesourcery/arm-2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/libgcc.a(_udivdi3.o)
+
+.debug_str      0x00000000     0xb24a
+ .debug_str     0x00000000      0x9f7 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+                               0x1670 (size before relaxing)
+ .debug_str     0x000009f7       0x84 arch/arm/cpu/arm926ejs/libarm926ejs.o
+                                0x128 (size before relaxing)
+ .debug_str     0x00000a7b      0x83f arch/arm/lib/libarm.o
+                               0x13cd (size before relaxing)
+ .debug_str     0x000012ba      0x188 board/davinci/common/libdavinci.o
+                                0x498 (size before relaxing)
+ .debug_str     0x00001442     0x496e common/libcommon.o
+                               0xca30 (size before relaxing)
+ .debug_str     0x00005db0      0x1f6 disk/libdisk.o
+                                0x6ff (size before relaxing)
+ .debug_str     0x00005fa6       0xda drivers/gpio/libgpio.o
+                                0x1eb (size before relaxing)
+ .debug_str     0x00006080       0x6e drivers/i2c/libi2c.o
+                                0x18b (size before relaxing)
+ .debug_str     0x000060ee      0x421 drivers/mmc/libmmc.o
+                                0xb77 (size before relaxing)
+ .debug_str     0x0000650f      0x237 drivers/mtd/libmtd.o
+                                0xbfa (size before relaxing)
+ .debug_str     0x00006746      0xe48 drivers/mtd/nand/libnand.o
+                               0x3d10 (size before relaxing)
+ .debug_str     0x0000758e      0xdea drivers/mtd/ubi/libubi.o
+                               0x7d57 (size before relaxing)
+ .debug_str     0x00008378      0x49a drivers/net/libnet.o
+                                0xcee (size before relaxing)
+ .debug_str     0x00008812       0x47 drivers/pcmcia/libpcmcia.o
+                                0x1ad (size before relaxing)
+ .debug_str     0x00008859       0x6e drivers/rtc/librtc.o
+                                0x16b (size before relaxing)
+ .debug_str     0x000088c7      0x232 drivers/serial/libserial.o
+                                0x6de (size before relaxing)
+ .debug_str     0x00008af9      0x19e drivers/spi/libspi.o
+                                0x33b (size before relaxing)
+ .debug_str     0x00008c97      0x504 drivers/usb/musb/libusb_musb.o
+                               0x111a (size before relaxing)
+ .debug_str     0x0000919b      0x57e fs/ext2/libext2fs.o
+                                0x9b7 (size before relaxing)
+ .debug_str     0x00009719      0x4bc fs/fat/libfat.o
+                                0x8e6 (size before relaxing)
+ .debug_str     0x00009bd5      0x870 lib/libgeneric.o
+                               0x1d55 (size before relaxing)
+ .debug_str     0x0000a445      0xd44 net/libnet.o
+                               0x1de5 (size before relaxing)
+ .debug_str     0x0000b189       0x8f board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+                                0xad7 (size before relaxing)
+ .debug_str     0x0000b218       0x32 /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+                                 0xff (size before relaxing)
+
+.debug_loc      0x00000000    0x411bf
+ .debug_loc     0x00000000      0x7f1 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .debug_loc     0x000007f1       0x20 arch/arm/cpu/arm926ejs/libarm926ejs.o
+ .debug_loc     0x00000811      0x9dd arch/arm/lib/libarm.o
+ .debug_loc     0x000011ee      0x2ad board/davinci/common/libdavinci.o
+ .debug_loc     0x0000149b    0x19fd6 common/libcommon.o
+ .debug_loc     0x0001b471      0x88b disk/libdisk.o
+ .debug_loc     0x0001bcfc      0x3b6 drivers/gpio/libgpio.o
+ .debug_loc     0x0001c0b2      0x533 drivers/i2c/libi2c.o
+ .debug_loc     0x0001c5e5     0x1abf drivers/mmc/libmmc.o
+ .debug_loc     0x0001e0a4     0x11e8 drivers/mtd/libmtd.o
+ .debug_loc     0x0001f28c     0x6cbe drivers/mtd/nand/libnand.o
+ .debug_loc     0x00025f4a     0x9c52 drivers/mtd/ubi/libubi.o
+ .debug_loc     0x0002fb9c      0x87e drivers/net/libnet.o
+ .debug_loc     0x0003041a      0x269 drivers/rtc/librtc.o
+ .debug_loc     0x00030683      0x32b drivers/serial/libserial.o
+ .debug_loc     0x000309ae      0xc3f drivers/spi/libspi.o
+ .debug_loc     0x000315ed     0x1108 drivers/usb/musb/libusb_musb.o
+ .debug_loc     0x000326f5     0x10ef fs/ext2/libext2fs.o
+ .debug_loc     0x000337e4     0x19f6 fs/fat/libfat.o
+ .debug_loc     0x000351da     0x7ea3 lib/libgeneric.o
+ .debug_loc     0x0003d07d     0x4003 net/libnet.o
+ .debug_loc     0x00041080       0xf3 board/davinci/dm365v2r/libdm365v2r.o(dm365v2r.o)
+ .debug_loc     0x00041173       0x4c /home/cmp/v2r_kernel/uboot/arch/arm/lib/eabi_compat.o
+
+.debug_ranges   0x00000000     0x34d0
+ .debug_ranges  0x00000000       0x18 arch/arm/cpu/arm926ejs/davinci/libdavinci.o
+ .debug_ranges  0x00000018      0x120 arch/arm/lib/libarm.o
+ .debug_ranges  0x00000138       0x30 board/davinci/common/libdavinci.o
+ .debug_ranges  0x00000168     0x12f8 common/libcommon.o
+ .debug_ranges  0x00001460       0x30 disk/libdisk.o
+ .debug_ranges  0x00001490       0xe8 drivers/mmc/libmmc.o
+ .debug_ranges  0x00001578      0x118 drivers/mtd/libmtd.o
+ .debug_ranges  0x00001690      0x5a0 drivers/mtd/nand/libnand.o
+ .debug_ranges  0x00001c30      0xa48 drivers/mtd/ubi/libubi.o
+ .debug_ranges  0x00002678       0x70 drivers/net/libnet.o
+ .debug_ranges  0x000026e8      0x150 drivers/spi/libspi.o
+ .debug_ranges  0x00002838       0xe0 drivers/usb/musb/libusb_musb.o
+ .debug_ranges  0x00002918      0x160 fs/ext2/libext2fs.o
+ .debug_ranges  0x00002a78      0x168 fs/fat/libfat.o
+ .debug_ranges  0x00002be0      0x3e8 lib/libgeneric.o
+ .debug_ranges  0x00002fc8      0x508 net/libnet.o

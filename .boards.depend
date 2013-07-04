@@ -1,0 +1,2 @@
+davinci_dm365evm: davinci_dm365evm_config; $(MAKE)
+davinci_dm365v2r: davinci_dm365v2r_config; $(MAKE)
