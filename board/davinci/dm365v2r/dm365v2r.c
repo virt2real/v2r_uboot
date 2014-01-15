@@ -54,13 +54,34 @@ int board_init(void)
 
 	/* Disable NAND write protection */
 
-	/* Configure GPIO75 as output */
-	writel((readl(&gpio45_base->dir) & ~(1 << 11)), &gpio45_base->dir);
+		/* Configure GPIO75 as output */
+		writel((readl(&gpio45_base->dir) & ~(1 << 11)), &gpio45_base->dir);
 
-	/* GPIO75 high */
-	writel((readl(&gpio45_base->out_data) | (0x00000800)), &gpio45_base->out_data);
+		/* GPIO75 high */
+		writel((readl(&gpio45_base->out_data) | (0x00000800)), &gpio45_base->out_data);
 
 	/* End disable NAND write protection */
+
+	/* Turn on RED led */
+
+		/* Configure GPIO74 as output */
+		//writel((readl(&gpio45_base->dir) & ~(1 << 10)), &gpio45_base->dir);
+
+		/* GPIO74 high */
+		//writel((readl(&gpio45_base->out_data) | (0x00000400)), &gpio45_base->out_data);
+
+	/* End turn on RED led */
+
+
+	/* Turn on GREEN led */
+
+		/* Configure GPIO73 as output */
+		writel((readl(&gpio45_base->dir) & ~(1 << 9)), &gpio45_base->dir);
+
+		/* GPIO73 high */
+		writel((readl(&gpio45_base->out_data) | (0x00000200)), &gpio45_base->out_data);
+
+	/* End turn on GREEN led */
 
 	/* Enable I2C bus */
 	REG(PINMUX3) |= 0x01400000;
