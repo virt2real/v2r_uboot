@@ -42,6 +42,8 @@ int board_init(void)
 			(struct davinci_gpio *)DAVINCI_GPIO_BANK01;
 	struct davinci_gpio *gpio23_base =
 			(struct davinci_gpio *)DAVINCI_GPIO_BANK23;
+	struct davinci_gpio *gpio45_base =
+			(struct davinci_gpio *)DAVINCI_GPIO_BANK45;
 
 	gd->bd->bi_arch_number = MACH_TYPE_DM365_V2R;
 	gd->bd->bi_boot_params = PHYS_SDRAM_1 + 0x100;
@@ -51,13 +53,14 @@ int board_init(void)
 	writel((readl(PINMUX2) & 0x00000015), PINMUX2);
 
 	/* Disable NAND write protection */
-	for(i=0; i < 20; i++) {
-		/* Configure GPIO59 as output */
-		writel((readl(&gpio23_base->dir) & ~(1 << 27)), &gpio23_base->dir);
 
-		/* GPIO 59 high */
-		writel((readl(&gpio23_base->out_data) | (1 << 27)), &gpio23_base->out_data);
-	}
+	/* Configure GPIO75 as output */
+	writel((readl(&gpio45_base->dir) & ~(1 << 11)), &gpio45_base->dir);
+
+	/* GPIO75 high */
+	writel((readl(&gpio45_base->out_data) | (0x00000800)), &gpio45_base->out_data);
+
+	/* End disable NAND write protection */
 
 	/* Enable I2C bus */
 	REG(PINMUX3) |= 0x01400000;
@@ -82,11 +85,12 @@ int board_init(void)
 	/* PINMUX4 to select CLKOUT0 */
     REG(PINMUX4) |= 0x00300000;
 
-	/* PINMUX4: Select GIO31 (CMOS_RST) & GIO36 (AIC31_RST), image sensor and audio codec reset */
-	REG(PINMUX4) &= 0xfff3fcff;
+    /* PINMUX4: Select GIO31 (CMOS_RST) & GIO36 (AIC31_RST), image sensor and audio codec reset */
+    REG(PINMUX4) &= 0xfff3fcff;
 
-	/* Reset image sensor */
+
 /* commented by Gol, this gpio used by relay shield */
+/* Reset image sensor */
 
 //	for (i=0; i < 20; i++)
 //	{
