@@ -189,7 +189,7 @@
 /* U-Boot general configuration */
 #undef CONFIG_USE_IRQ				/* No IRQ/FIQ in U-Boot */
 #define CONFIG_BOOTFILE		"uImage"	/* Boot file name */
-#define CONFIG_SYS_PROMPT	"V2R ># "
+#define CONFIG_SYS_PROMPT	"virt2real ># "
 #define CONFIG_SYS_CBSIZE	1024		/* Console I/O Buffer Size  */
 #define CONFIG_SYS_PBSIZE			/* Print buffer size */ \
 		(CONFIG_SYS_CBSIZE + sizeof(CONFIG_SYS_PROMPT) + 16)
