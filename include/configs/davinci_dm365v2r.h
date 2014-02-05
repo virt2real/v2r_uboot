@@ -211,7 +211,7 @@
 #define CONFIG_CMD_ENV
 #endif
 
-#define CONFIG_BOOTDELAY	0
+#define CONFIG_BOOTDELAY	1
 #define CONFIG_BOOTARGS \
 		"console=ttyS0,115200n8 " \
 		"root=/dev/mmcblk0p2 rw rootwait ip=off"
